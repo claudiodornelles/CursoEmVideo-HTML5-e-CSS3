@@ -23,7 +23,7 @@
         <li><abbr title="Utilize a tag &lt;p&gt;">Parágrafos</abbr></li>
         <li><abbr title="Utilize a tag &lt;img&gt;">Imagens</abbr></li>
             <ul>
-                <li>Para inserir imagens, precisamos informar o <abbr title="O caminho até a imagem.">local</abbr> onde essa imagem se encontra e o seu <abbr title="Texto que explica o conteúdo da imagem. Este texto será exibido no lugar da imagem caso a mesma não possa ser carregada.">texto alternativo</abbr>.</li>
+                <li>Para inserir imagens, precisamos informar o <abbr title="O caminho até a imagem. Utiliza-se aqui o atributo src=&quot; &quot;">local</abbr> onde essa imagem se encontra e o seu <abbr title="Texto que explica o conteúdo da imagem. Este texto será exibido no lugar da imagem caso a mesma não possa ser carregada.">texto alternativo</abbr> com o <abbr title="Utilize o atributo alt=&quot; &quot;">atributo específico</abbr>.</li>
                 <li><img src="imagens/favicon.ico" alt="favicon-html"></li>
             </ul>
         <li><abbr title="Utilize a tag &lt;abbr&gt;">Abreviações</abbr></li>
@@ -32,10 +32,62 @@
                 <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
             </ul>
         <li>Códigos-fonte</li>
-        <li>Listas numeradas</li>
-        <li>Listas com demarcadores</li>
-        <li>Links externos</li>
-        <li>Links internos</li>
+            <ul>
+                <li>Existem duas formas de se criar um código-fonte</li>
+                <ol>
+                    <li>Podemos ter o <abbr title="Utilize a tag &lt;code&gt;">código in-line</abbr>: <code>if True:</code></li>
+                    <li>Podemos ter o <abbr title="Utilize a tag &lt;pre&gt;">código separado</abbr>:</li>
+                    <ul>
+                        <li><pre>
+if True:
+    print('True')
+else:
+    print('False')
+                        </pre></li>
+                    </ul>
+                </ol>      
+            </ul>
+        <li><abbr title="Utilize as tags &lt;ol&gt; para criar a lista e &lt;li&gt; para criar os elementos da lista.">Listas numeradas</abbr></li>
+            <ol>
+                <li>Este é um exemplo</li>
+                <li>de lista numerada</li>
+            <ol type="a">
+                <li>podemos <abbr title="Para definir, inclua o atributo &quot;type&quot; na tag &lt;ol&gt;">definir</abbr> o <abbr title="Possíveis tipos: A, a, I, i, 1">tipo</abbr> de ordenamento.</li>
+            </ol>
+                <li>Também podemos <abbr title="Utilize o atributo start=&quot; &quot; e o número do termo de início.">definir o início</abbr> da lista</li>
+                <ul>
+                    <li>Importante: O termo de início deve sempre ser especificado como número.</li>
+                </ul>
+            </ol>
+        <li><abbr title="Utilize a tag &lt;ul&gt;">Listas com demarcadores</abbr></li>
+            <p>Podemos criar listas com elementos não ordenados, chamadas de listas com demarcadores. Uma lista com demarcadores pode ser constituída de <abbr title="O tipo de demarcador é definido utilizando o atributo type=&quot; &quot;">diferentes marcadores</abbr>.</p>
+                <ul type="circle">
+                    <li>Podemos utilizar o &quot;<em>circle</em>&quot;</li>
+                </ul>
+                <ul type="square">
+                    <li>Existe também o &quot;<em>square</em>&quot;</li>
+                </ul>
+                <ul type="disk">
+                    <li>E o &quot;<em>disk</em>&quot;</li>
+                </ul>
+        <li><abbr title="Para criação de links utilizamos a tag &lt;a&gt;">Links</abbr></li>
+               <ul>
+                   <li>
+                       <abbr title="Em links externos o atributo href=&quot; &quot; possui a URL completa do link externo.">Externos</abbr>
+                    </li>
+                   <p>
+                       Utiliza-se os atributos <em>target=&quot;_blank&quot;</em> e <em>rel=&quot;external&quot;</em> para que as ferramentas de busca entendam que o link está direcionando para fora da sua página e ainda, que essa página seja aberta em uma nova aba.
+                    </p>
+                   <li>
+                       <abbr title="Em links internos o atributo href=&quot; &quot; possui o caminho da página que será acessada">Internos</abbr>
+                    </li>
+                    <p>
+                        Utiliza-se os atributos <em>target=&quot;_self&quot;</em> e <em>rel=&quot;next / prev&quot;</em> para que as ferramentas de busca entendam que o link está direcionando para uma página seguinte ou anterior à pagina atual e ainda, que essa página seja aberta na mesma aba.
+                     </p>
+                     <p>
+                         Caso o link seja para retroceder para uma página que se encontra em outra pasta do repositório, devemos utilizar o início do caminho como <em>"../"</em>
+                     </p>
+               </ul> 
         <li>Palavras com ênfase</li>
             <ul>
                 <li><em><abbr title="Utilize a tag <em> e </em>">Descubra como criar um texto como esse.</abbr></em></li>
