@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho da janela do seu navegador.</p>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="imagens/foto-perfil-claudio-dornelles-600px.png" type="image/png">
+            <source media="(min-width: 600px)" srcset="imagens/foto-perfil-claudio-dornelles-300px.png" type="image/png">
+            <source media="(min-width: 300px)" srcset="imagens/foto-perfil-claudio-dornelles-150px.png" type="image/png">
+            <img src="imagens/foto-perfil-claudio-dornelles-75px.png" alt="foto-perfil-claudio-dornelles">
+        </picture>
+    <h1>Reproduzindo áudios</h1>
+    <h2>Happy - Mistake</h2>
+    <audio src="midia/happy-mistake.mp3" controls></audio>
+    <h2>Podcast Guanabara</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Tente evitar este tipo de arquivo pois são muito pesados -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+</body>
+</html>
