@@ -1,0 +1,69 @@
+.heading{
+    padding: 10px;
+}
+
+.foto-perfil{
+    margin: 2.5% 2.5%;
+    padding: 2.5% 2.5%;
+    float: right;
+}
+
+.section-body{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.quem-sou-eu{
+    margin: 12px auto;
+    text-align: justify;
+    background-color: rgb(231, 235, 235);
+    border-radius: 12px;
+    min-height: 337px;
+    font-size: 14pt;
+    padding: 2.5% 2.5%;
+}
+
+.contato{
+    margin: 12px auto;
+    padding: 2.5% 2.5%;
+    text-align: justify;
+    background-color: rgb(231, 235, 235);
+    border-radius: 12px;
+    font-size: 14pt;
+}
+
+.lista-redes-sociais{
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+ul{
+    margin: 0 auto;
+    padding: 6px 12px;
+}
+
+h1{
+    position: static;
+    text-align: center;
+    font-size: 36pt;
+    margin: 0 auto;
+}
+
+p{
+    margin: 0 auto;
+    padding: 6px 12px;
+}
+
+h2{
+    margin: 0 0;
+    padding: 12px 12px;
+    font-size: 24pt;
+}
+
+body{
+    background-image: url("imagens/bg.jpg");
+    height: auto;
+    width: auto;
+    max-width: 1920px;
+    max-height: 1080px;
+}
